@@ -10,6 +10,8 @@ import { BtnsComponent } from './first-component/btns.component';
 import { DirectivesDirective } from './directives.directive';
 import { MyDirectivesComponent } from './my-directives/my-directives.component';
 import { SizerDirective } from './my-directives/sizer.directive';
+import { ServicesComponent } from './services/services.component';
+import { MessagingService } from './services/messaging.service';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,12 @@ import { SizerDirective } from './my-directives/sizer.directive';
     DirectivesDirective,
     MyDirectivesComponent,
     SizerDirective,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MessagingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
